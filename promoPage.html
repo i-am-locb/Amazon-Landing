@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header_giveaway" onClick="location.href='./promoPage.html'">
+      <div class="wrapper">
+        <h1 class="header_giveaway__title">Autumn Giveaways for FREE</h1>
+        <p class="header_giveaway_subtitle">
+          Participate in Autumn Giveaway and treat yourself to nice and
+          refreshing cosmetics for free
+        </p>
+      </div>
+    </header>
+    <main class="main">
+      <div class="wrapper">
+        <section class="main_promo">
+          <div class="main_promo_scrollPromo">
+            <div class="main_promo_scrollPromo_progressLine"></div>
+            <ul id="scroll" class="main_promo_scrollPromo_list">
+              <li class="main_promo_scrollPromo_list_circle activePromoCircle">
+                <div
+                  onclick="onClick(1)"
+                  class="
+                    main_promo_scrollPromo_list_circle_item
+                    activePromoItem
+                  "
+                >
+                  1
+                </div>
+              </li>
+              <li class="main_promo_scrollPromo_list_circle">
+                <div
+                  onclick="onClick(2)"
+                  class="main_promo_scrollPromo_list_circle_item"
+                >
+                  2
+                </div>
+              </li>
+              <li class="main_promo_scrollPromo_list_circle">
+                <div
+                  onclick="onClick(3)"
+                  class="main_promo_scrollPromo_list_circle_item"
+                >
+                  3
+                </div>
+              </li>
+              <li class="main_promo_scrollPromo_list_circle">
+                <div
+                  onclick="onClick(4)"
+                  class="main_promo_scrollPromo_list_circle_item"
+                >
+                  4
+                </div>
+              </li>
+              <li class="main_promo_scrollPromo_list_circle">
+                <div
+                  onclick="(onClick(5))"
+                  class="main_promo_scrollPromo_list_circle_item"
+                >
+                  5
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="main_promo_wrapper">
+            <!-- step 1 -->
+
+            <div class="main_promo_textPromo step_1">
+              <h1 class="main_promo_textPromo_title">Step 1</h1>
+              <h2 class="main_promo_textPromo_subtitle">
+                Lorem ipsum dolor sit amet
+              </h2>
+              <p class="main_promo_textPromo_text">
+                Aliquam urna arcu, scelerisque vel viverra sed, pellentesque sit
+                amet metus. Curabitur at luctus massa. Vestibulum pretium sem
+                tortor, vitae mattis odio accumsan vitae. Fusce id luctus erat:
+              </p>
+              <ul class="main_promo_textPromo_text_list">
+                <li class="main_promo_textPromo_text_item">
+                  Mauris rutrum interdum condimentum.
+                </li>
+                <li class="main_promo_textPromo_text_item">
+                  Donec commodo quis arcu eget pretium.
+                </li>
+              </ul>
+              <button class="main_promo_textPromo_claim">
+                Agree and continue
+              </button>
+            </div>
+            <div class="main_promo_fotoPromo step_1">
+              <img
+                src="./img/promo.png"
+                alt="promo"
+                class="main_promo_fotoPromo-pic"
+              />
+            </div>
+
+            <!-- step 2 -->
+
+            <div class="main_promo_textPromo step_2">
+              <h1 class="main_promo_textPromo_title">Step 2</h1>
+              <h2 class="main_promo_textPromo_subtitle">Share Facebook post</h2>
+              <p class="main_promo_textPromo_text">
+                To participate in this giveaway please share this giveaway offer
+                with your friends. Not only your friends will appreciate this
+                offer but you will receive $10 Amazon Gift Card for each of your
+                friends that participates in this giveaway!
+              </p>
+              <button class="main_promo_textPromo_claim">
+                Agree and continue
+              </button>
+            </div>
+            <div class="main_promo_fotoPromo step_2 step2_arrowBlock">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./img/facebook_post768px.png"
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="./img/facebook_post.png"
+                />
+                <img
+                  src="./img/facebook_post.png"
+                  alt="promo"
+                  class="main_promo_fotoPromo-pic"
+                />
+              </picture>
+              <picture class="step2_arrow">
+                <source
+                  media="(max-width: 320px)"
+                  srcset="./img/press_here_left.png"
+                />
+                <source
+                  media="(min-width: 321px)"
+                  srcset="./img/press_here_right.png"
+                />
+                <img src="./img/press_here_right.png" alt="arrow" />
+              </picture>
+            </div>
+            <!-- step 3 -->
+
+            <div class="main_promo_textPromo step_3">
+              <h1 class="main_promo_textPromo_title">Step 3</h1>
+              <h2 class="main_promo_textPromo_subtitle">Amazon Prime</h2>
+              <p
+                class="main_promo_textPromo_text main_promo_textPromo_question"
+              >
+                Do you have an Amazon Prime account?
+              </p>
+              <p class="main_promo_textPromo_text">
+                To be able to participate in this giveaway you need to have
+                Amazon Prime.
+              </p>
+              <button
+                class="main_promo_textPromo_claim main_promo_textPromo_yes"
+              >
+                Yes, i have
+              </button>
+              <button
+                class="main_promo_textPromo_claim main_promo_textPromo_no"
+              >
+                no, i don’t have
+              </button>
+            </div>
+            <div class="main_promo_fotoPromo step_3">
+              <img
+                src="./img/promo.png"
+                alt="promo"
+                class="main_promo_fotoPromo-pic"
+              />
+            </div>
+            <!-- step 4 -->
+
+            <div class="main_promo_textPromo step_4">
+              <h1 class="main_promo_textPromo_title">Step 4</h1>
+              <h2 class="main_promo_textPromo_subtitle">
+                How to Buy a Product with 100% BONUS!
+              </h2>
+              <ul class="main_promo_textPromo_text_list steps">
+                <li class="steps_item li_1">
+                  You need to Buy our Product on Amazon at the specified price
+                  $20.89!
+                </li>
+                <li class="steps_item li_2">
+                  After the purchase - Send us your Order Number or the
+                  Screenshot to our manager in FB Messenger
+                </li>
+                <li class="steps_item li_3">
+                  When you receive the product please use it and share product
+                  reviews
+                </li>
+                <li class="steps_item li_4">
+                  We will send you the 25$ Amazon Gift Card code within 24 hours
+                  after we get short review from you.
+                </li>
+                <li class="steps_item li_5">
+                  As a result, you will receive <br />
+                  our Product Free!
+                </li>
+              </ul>
+              <button class="main_promo_textPromo_claim">Get Offer</button>
+              <p class="main_promo_textPromo_linkWrapper">
+                <a
+                  href="http://htmlbook.ru/css/"
+                  class="main_promo_textPromo_link"
+                  >I don't like offer terms</a
+                >
+              </p>
+            </div>
+            <div class="main_promo_fotoPromo step_4">
+              <img
+                src="./img/promo.png"
+                alt="promo"
+                class="main_promo_fotoPromo-pic"
+              />
+            </div>
+            <!-- step 5 -->
+
+            <div id="step_5" class="main_promo_textPromo step_5">
+              <h1 class="main_promo_textPromo_title">Step 5</h1>
+              <h2 class="main_promo_textPromo_subtitle">
+                Buy and Provide order ID to our Manager
+              </h2>
+              <p class="main_promo_textPromo_text text1">
+                Click the button <b class="bold">GO TO AMAZON</b> and
+                <b class="bold">Buy a Product</b>
+              </p>
+              <button class="main_promo_textPromo_claim button1">
+                Go to amazon
+                <img
+                  src="./img/aLogo.png"
+                  alt=""
+                  class="main_promo_textPromo_claim_aLogo"
+                />
+              </button>
+              <p class="main_promo_textPromo_text text2">
+                Click on the button below and
+                <b class="bold">Provide Order ID to our Manager</b> in FB
+                Messenger
+              </p>
+              <p class="main_promo_textPromo_text text3">
+                (If you have any questions, you can ask them to our Manager)
+              </p>
+              <button class="main_promo_textPromo_claim">
+                provide order id
+              </button>
+            </div>
+            <div class="main_promo_fotoPromo step_5">
+              <img
+                src="./img/promo.png"
+                alt="promo"
+                class="main_promo_fotoPromo-pic"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="main_howDoesItWorks">
+          <h1 class="main_howDoesItWorks_title">How does it work?</h1>
+          <ul class="main_howDoesItWorks_list">
+            <li class="main_howDoesItWorks_list__item">
+              <div class="main_howDoesItWorks_list__itemCircle">
+                <!-- <img
+                src="./img/howDoesItWorks1.png"
+                alt="How does it works"
+                class="main_howDoesItWorks_list__itemCircle-pic"
+              /> -->
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="./img/howDoesItWorks1-768px.png"
+                  />
+                  <source
+                    media="(min-width: 769px)"
+                    srcset="./img/howDoesItWorks1.png"
+                  />
+                  <img
+                    src="./img/howDoesItWorks1.png"
+                    alt="How does it works"
+                    class="main_howDoesItWorks_list__itemCircle-pic"
+                  />
+                </picture>
+              </div>
+              <p class="main_howDoesItWorks_list__itemText"></p>
+            </li>
+            <li class="main_howDoesItWorks_list__itemArrow arrow1">
+              <picture class="main_howDoesItWorks_list__itemArrow-box">
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./img/arrow768px.png"
+                />
+                <source media="(min-width: 769px)" srcset="./img/arrow.png" />
+                <img
+                  src="./img/arrow.png"
+                  alt="arrow"
+                  class="main_howDoesItWorks_list__itemArrow-pic"
+                />
+              </picture>
+            </li>
+            <li class="main_howDoesItWorks_list__item">
+              <div class="main_howDoesItWorks_list__itemCircle">
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="./img/howDoesItWorks2-768px.png"
+                  />
+                  <source
+                    media="(min-width: 769px)"
+                    srcset="./img/howDoesItWorks2.png"
+                  />
+                  <img
+                    src="./img/howDoesItWorks2.png"
+                    alt="How does it works"
+                    class="main_howDoesItWorks_list__itemCircle-pic"
+                  />
+                </picture>
+              </div>
+              <p class="main_howDoesItWorks_list__itemText">Choose product</p>
+            </li>
+            <li class="main_howDoesItWorks_list__itemArrow arrow2">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./img/arrow768px.png"
+                />
+                <source media="(min-width: 769px)" srcset="./img/arrow.png" />
+                <img
+                  src="./img/arrow.png"
+                  alt="arrow"
+                  class="main_howDoesItWorks_list__itemArrow-pic"
+                />
+              </picture>
+            </li>
+            <li class="main_howDoesItWorks_list__item">
+              <div class="main_howDoesItWorks_list__itemCircle">
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="./img/howDoesItWorks3-768px.png"
+                  />
+                  <source
+                    media="(min-width: 769px)"
+                    srcset="./img/howDoesItWorks3.png"
+                  />
+                  <img
+                    src="./img/howDoesItWorks3.png"
+                    alt="How does it works"
+                    class="main_howDoesItWorks_list__itemCircle-pic"
+                  />
+                </picture>
+              </div>
+              <p class="main_howDoesItWorks_list__itemText">Buy product</p>
+            </li>
+            <li class="main_howDoesItWorks_list__itemArrow arrow3">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./img/arrow768px.png"
+                />
+                <source media="(min-width: 769px)" srcset="./img/arrow.png" />
+                <img
+                  src="./img/arrow.png"
+                  alt="arrow"
+                  class="main_howDoesItWorks_list__itemArrow-pic"
+                />
+              </picture>
+            </li>
+            <li class="main_howDoesItWorks_list__item">
+              <div class="main_howDoesItWorks_list__itemCircle">
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="./img/howDoesItWorks4-768px.png"
+                  />
+                  <source
+                    media="(min-width: 769px)"
+                    srcset="./img/howDoesItWorks4.png"
+                  />
+                  <img
+                    src="./img/howDoesItWorks4.png"
+                    alt="How does it works"
+                    class="main_howDoesItWorks_list__itemCircle-pic"
+                  />
+                </picture>
+              </div>
+              <p class="main_howDoesItWorks_list__itemText">
+                Test and share review
+              </p>
+            </li>
+            <li class="main_howDoesItWorks_list__itemArrow arrow4">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./img/arrow768px.png"
+                />
+                <source media="(min-width: 769px)" srcset="./img/arrow.png" />
+                <img
+                  src="./img/arrow.png"
+                  alt="arrow"
+                  class="main_howDoesItWorks_list__itemArrow-pic"
+                />
+              </picture>
+            </li>
+            <li class="main_howDoesItWorks_list__item">
+              <div class="main_howDoesItWorks_list__itemCircle">
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="./img/howDoesItWorks5-768px.png"
+                  />
+                  <source
+                    media="(min-width: 769px)"
+                    srcset="./img/howDoesItWorks5.png"
+                  />
+                  <img
+                    src="./img/howDoesItWorks5.png"
+                    alt="How does it works"
+                    class="main_howDoesItWorks_list__itemCircle-pic"
+                  />
+                </picture>
+              </div>
+              <p class="main_howDoesItWorks_list__itemText">
+                Get 100% money back
+              </p>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <section class="footer_links">
+        <div class="wrapper">
+          <nav class="footer_links_block">
+            <div class="footer_links_block_privacy">
+              <h5 class="footer_links_block_privacy_title">
+                Privacy and Terms
+              </h5>
+              <a href="/" class="footer_links_block_privacy_title_link"
+                >Privacy Policy</a
+              >
+              <a href="/" class="footer_links_block_privacy_title_link"
+                >Terms of use</a
+              >
+            </div>
+            <div class="footer_links_block_help">
+              <h5 class="footer_links_block_privacy_title">Need Help?</h5>
+              <a href="/" class="footer_links_block_privacy_title_link"
+                >mail@gmail.com</a
+              >
+            </div>
+            <div class="footer_links_block_social">
+              <h5 class="footer_links_block_privacy_title">Social</h5>
+              <a href="/" class="footer_links_block_privacy_title_link"
+                >Facebook</a
+              >
+              <a href="/" class="footer_links_block_privacy_title_link"
+                >Instagram</a
+              >
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section class="footer_copyright">
+        <div class="wrapper">
+          <p class="footer_copyright__text">© All Rights Reserved</p>
+        </div>
+      </section>
+    </footer>
+
+    <script>
+      function onClick(num) {
+        let stepsArr =
+          document.getElementsByClassName("main_promo_wrapper")[0].children;
+        for (let i = 0; i < stepsArr.length; i++) {
+          stepsArr[i].style.display = "none";
+        }
+        let curentStep = document.getElementsByClassName("step_" + num);
+        curentStep[0].style.display = "block";
+        curentStep[1].style.display = "block";
+
+        if (num == 2) {
+          curentStep[1].children[0].children[2].style.display = "block"
+        }
+
+        let navBarArr = document.getElementsByClassName(
+          "main_promo_scrollPromo_list"
+        )[0].children;
+        for (let i = 0; i < navBarArr.length; i++) {
+          navBarArr[i].className = "main_promo_scrollPromo_list_circle";
+          navBarArr[i].children[0].className =
+            "main_promo_scrollPromo_list_circle_item";
+        }
+
+        let buf = num - 1;
+        for (let i = 0; i < navBarArr.length; i++) {
+          if (i === buf) {
+            navBarArr[i].className += " activePromoCircle";
+            navBarArr[i].children[0].className += " activePromoItem";
+          } else if (i <= buf) {
+            navBarArr[i].children[0].className += " activePromoItem";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header_giveaway" onClick="location.href='./promoPage.html'">
+      <div class="wrapper">
+        <h1 class="header_giveaway__title">Autumn Giveaways for FREE</h1>
+        <p class="header_giveaway_subtitle">
+          Participate in Autumn Giveaway and treat yourself to nice and
+          refreshing cosmetics for free
+        </p>
+      </div>
+    </header>
+    <main class="main">
+      <div class="wrapper">
+        <section class="main_product">
+          <div class="main_product_foto">
+            <div class="main_product_foto_carousel">
+              <img
+                alt="buttonUp"
+                src="./img/svg/buttonUp.svg"
+                class="main_product_foto_carousel-up"
+              />
+              <ul class="main_product_foto_carousel_fotos">
+                <li class="main_product_foto_carousel_fotos__item active">
+                  <img
+                    alt="scrollBarFoto1"
+                    src="./img/scrollBarFoto1.png"
+                    class="main_product_foto_carousel_fotos__item-pic"
+                  />
+                </li>
+                <li class="main_product_foto_carousel_fotos__item">
+                  <img
+                    alt="scrollBarFoto2"
+                    src="./img/scrollBarFoto2.png"
+                    class="main_product_foto_carousel_fotos__item-pic"
+                  />
+                </li>
+                <li class="main_product_foto_carousel_fotos__item">
+                  <img
+                    alt="scrollBarFoto3"
+                    src="./img/scrollBarFoto3.png"
+                    class="main_product_foto_carousel_fotos__item-pic"
+                  />
+                </li>
+              </ul>
+              <img
+                alt="buttonDown"
+                src="./img/svg/buttonDown.svg"
+                class="main_product_foto_carousel-down"
+              />
+            </div>
+            <div class="main_product_foto_mainFoto">
+              <img
+                alt="fotoBlockMain"
+                src="./img/fotoBlockMain.png"
+                class="main_product_foto_mainFoto-pic"
+              />
+            </div>
+          </div>
+          <div class="main_product_about">
+            <div class="main_product_about_rating">
+              <h3 class="main_product_about_rating__status">BEST SELLER</h3>
+              <img
+                alt="Stars"
+                class="main_product_about_rating__stars"
+                src="./img/svg/stars.svg"
+              />
+              <p class="main_product_about_rating__review">(1731 reviews)</p>
+            </div>
+            <h2 class="main_product_about__title">
+              Acne Treatment Cystic Acne heals, repairs & renews
+            </h2>
+            <p class="main_product_about__description">Description:</p>
+            <p class="main_product_about__descriptionText">
+              Addictively refreshing gel-cream leaves skin plump, dewy, glowing.
+            </p>
+            <button class="main_product_about_remains">items left: 12</button>
+            <hr align="left" class="main_product_about__line" />
+            <div class="main_product_about_price">
+              <p class="main_product_about_price__realPrice">us$25.89</p>
+              <p class="main_product_about_price__promoPrice">$0.00 FREE</p>
+            </div>
+            <button class="main_product_about_choose">SELECT</button>
+            <img
+              src="./img/amazon_prime_logo.png"
+              alt="Amazon Prime Logo"
+              class="main_product_about_amazonLogo"
+            />
+          </div>
+        </section>
+        <section class="main_overview">
+          <h3 class="main_overview_title">Overview</h3>
+          <h5 class="main_overview_whoItsFor">Who It's For</h5>
+          <p class="main_overview_whoItsFor_text">
+            Very Dry, Dry, Dry Combination Skin (Type 1, 2)
+          </p>
+          <h5 class="main_overview_whatItIs">What It Is</h5>
+          <p class="main_overview_whatItIs_text">
+            Step 3 in our customized 3-Step Skincare System. <br />
+            Dermatologist-developed face moisturizer softens, smooths, improves.
+            Leaves skin glowing.
+          </p>
+          <h5 class="main_overview_whatItDoes">What It Does</h5>
+          <ul class="main_overview_whatItDoes_list">
+            <li class="main_overview_whatItDoes__item">
+              Silky lotion delivers 8-hour hydration.
+            </li>
+            <li class="main_overview_whatItDoes__item">
+              Slips on easily, absorbs quickly.
+            </li>
+            <li class="main_overview_whatItDoes__item">
+              Helps strengthen skin’s own moisture barrier so more moisture
+              stays in. Skin that holds onto moisture has a youthful-looking
+              glow.
+            </li>
+          </ul>
+          <h5 class="main_overview_keyIngredients" id="titleReadMore">
+            Key Ingredients
+          </h5>
+          <p class="main_overview_keyIngredients_text" id="textReadMore">
+            Sunflower Seed Cake, Barley Extract and Cucumber Fruit Extract help
+            strengthen skin’s barrier, improve its resiliency, and balance and
+            retain skin’s moisture levels. Hyaluronic acid acts as a natural
+            moisture magnet/humectant.
+          </p>
+          <p
+            class="main_overview_keyIngredients_toggle"
+            onclick="toogleReadMore()"
+            id="buttonReadMore"
+          >
+            Read more...
+          </p>
+        </section>
+        <section class="main_howDoesItWorks">
+            <h1 class="main_howDoesItWorks_title">How does it work?</h1>
+            <ul class="main_howDoesItWorks_list">
+              <li class="main_howDoesItWorks_list__item">
+                <div class="main_howDoesItWorks_list__itemCircle">
+                  <!-- <img
+                  src="./img/howDoesItWorks1.png"
+                  alt="How does it works"
+                  class="main_howDoesItWorks_list__itemCircle-pic"
+                /> -->
+                  <picture>
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="./img/howDoesItWorks1-768px.png"
+                    />
+                    <source
+                      media="(min-width: 769px)"
+                      srcset="./img/howDoesItWorks1.png"
+                    />
+                    <img
+                      src="./img/howDoesItWorks1.png"
+                      alt="How does it works"
+                      class="main_howDoesItWorks_list__itemCircle-pic"
+                    />
+                  </picture>
+                </div>
+                <p class="main_howDoesItWorks_list__itemText"></p>
+              </li>
+              <li class="main_howDoesItWorks_list__itemArrow arrow1">
+                <picture class="main_howDoesItWorks_list__itemArrow-box">
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="./img/arrow768px.png"
+                  />
+                  <source media="(min-width: 769px)" srcset="./img/arrow.png" />
+                  <img
+                    src="./img/arrow.png"
+                    alt="arrow"
+                    class="main_howDoesItWorks_list__itemArrow-pic"
+                  />
+                </picture>
+              </li>
+              <li class="main_howDoesItWorks_list__item">
+                <div class="main_howDoesItWorks_list__itemCircle">
+                  <picture>
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="./img/howDoesItWorks2-768px.png"
+                    />
+                    <source
+                      media="(min-width: 769px)"
+                      srcset="./img/howDoesItWorks2.png"
+                    />
+                    <img
+                      src="./img/howDoesItWorks2.png"
+                      alt="How does it works"
+                      class="main_howDoesItWorks_list__itemCircle-pic"
+                    />
+                  </picture>
+                </div>
+                <p class="main_howDoesItWorks_list__itemText">Choose product</p>
+              </li>
+              <li class="main_howDoesItWorks_list__itemArrow arrow2">
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="./img/arrow768px.png"
+                  />
+                  <source media="(min-width: 769px)" srcset="./img/arrow.png" />
+                  <img
+                    src="./img/arrow.png"
+                    alt="arrow"
+                    class="main_howDoesItWorks_list__itemArrow-pic"
+                  />
+                </picture>
+              </li>
+              <li class="main_howDoesItWorks_list__item">
+                <div class="main_howDoesItWorks_list__itemCircle">
+                  <picture>
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="./img/howDoesItWorks3-768px.png"
+                    />
+                    <source
+                      media="(min-width: 769px)"
+                      srcset="./img/howDoesItWorks3.png"
+                    />
+                    <img
+                      src="./img/howDoesItWorks3.png"
+                      alt="How does it works"
+                      class="main_howDoesItWorks_list__itemCircle-pic"
+                    />
+                  </picture>
+                </div>
+                <p class="main_howDoesItWorks_list__itemText">Buy product</p>
+              </li>
+              <li class="main_howDoesItWorks_list__itemArrow arrow3">
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="./img/arrow768px.png"
+                  />
+                  <source media="(min-width: 769px)" srcset="./img/arrow.png" />
+                  <img
+                    src="./img/arrow.png"
+                    alt="arrow"
+                    class="main_howDoesItWorks_list__itemArrow-pic"
+                  />
+                </picture>
+              </li>
+              <li class="main_howDoesItWorks_list__item">
+                <div class="main_howDoesItWorks_list__itemCircle">
+                  <picture>
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="./img/howDoesItWorks4-768px.png"
+                    />
+                    <source
+                      media="(min-width: 769px)"
+                      srcset="./img/howDoesItWorks4.png"
+                    />
+                    <img
+                      src="./img/howDoesItWorks4.png"
+                      alt="How does it works"
+                      class="main_howDoesItWorks_list__itemCircle-pic"
+                    />
+                  </picture>
+                </div>
+                <p class="main_howDoesItWorks_list__itemText">
+                  Test and share review
+                </p>
+              </li>
+              <li class="main_howDoesItWorks_list__itemArrow arrow4">
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="./img/arrow768px.png"
+                  />
+                  <source media="(min-width: 769px)" srcset="./img/arrow.png" />
+                  <img
+                    src="./img/arrow.png"
+                    alt="arrow"
+                    class="main_howDoesItWorks_list__itemArrow-pic"
+                  />
+                </picture>
+              </li>
+              <li class="main_howDoesItWorks_list__item">
+                <div class="main_howDoesItWorks_list__itemCircle">
+                  <picture>
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="./img/howDoesItWorks5-768px.png"
+                    />
+                    <source
+                      media="(min-width: 769px)"
+                      srcset="./img/howDoesItWorks5.png"
+                    />
+                    <img
+                      src="./img/howDoesItWorks5.png"
+                      alt="How does it works"
+                      class="main_howDoesItWorks_list__itemCircle-pic"
+                    />
+                  </picture>
+                </div>
+                <p class="main_howDoesItWorks_list__itemText">
+                  Get 100% money back
+                </p>
+              </li>
+            </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <section class="footer_links">
+        <div class="wrapper">
+          <nav class="footer_links_block">
+            <div class="footer_links_block_privacy">
+              <h5 class="footer_links_block_privacy_title">
+                Privacy and Terms
+              </h5>
+              <a href="/" class="footer_links_block_privacy_title_link"
+                >Privacy Policy</a
+              >
+              <a href="/" class="footer_links_block_privacy_title_link"
+                >Terms of use</a
+              >
+            </div>
+            <div class="footer_links_block_help">
+              <h5 class="footer_links_block_privacy_title">Need Help?</h5>
+              <a href="/" class="footer_links_block_privacy_title_link"
+                >mail@gmail.com</a
+              >
+            </div>
+            <div class="footer_links_block_social">
+              <h5 class="footer_links_block_privacy_title">Social</h5>
+              <a href="/" class="footer_links_block_privacy_title_link"
+                >Facebook</a
+              >
+              <a href="/" class="footer_links_block_privacy_title_link"
+                >Instagram</a
+              >
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section class="footer_copyright">
+        <div class="wrapper">
+          <p class="footer_copyright__text">© All Rights Reserved</p>
+        </div>
+      </section>
+    </footer>
+    <script>
+      function toogleReadMore() {
+        let button = document.getElementById("buttonReadMore");
+        let title = document.getElementById("titleReadMore");
+        let text = document.getElementById("textReadMore");
+
+        button.style.display = "none";
+        title.style.display = "block";
+        text.style.display = "inline-block";
+      }
+    </script>
+  </body>
+</html>
